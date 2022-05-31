@@ -15,34 +15,23 @@ config_version: 2.0
 # add a new datasource. Read more at https://docs.greatexpectations.io/en/latest/reference/core_concepts/datasource_reference.html
 datasources:
   tsv:
-    batch_kwargs_generators:
-      subdir_reader:
-        class_name: SubdirReaderBatchKwargsGenerator
-        base_directory: ../tsv
     class_name: PandasDatasource
     module_name: great_expectations.datasource
     data_asset_type:
       class_name: PandasDataset
       module_name: great_expectations.dataset
-
-# This config file supports variable substitution which enables: 1) keeping
-# secrets out of source control & 2) environment-based configuration changes
-# such as staging vs prod.
-#
-# When GE encounters substitution syntax (like `my_key: ${my_value}` or
-# `my_key: $my_value`) in the great_expectations.yml file, it will attempt
-# to replace the value of `my_key` with the value from an environment
-# variable `my_value` or a corresponding key read from this config file,
-# which is defined through the `config_variables_file_path`.
-# Environment variables take precedence over variables defined here.
-#
-# Substitution values defined here can be a simple (non-nested) value,
-# nested value such as a dictionary, or an environment variable (i.e. ${ENV_VAR})
-#
-#
-# https://docs.greatexpectations.io/en/latest/guides/how_to_guides/configuring_data_contexts/how_to_use_a_yaml_file_or_environment_variables_to_populate_credentials.html
-
-
+  seq_stats:
+    class_name: PandasDatasource
+    module_name: great_expectations.datasource
+    data_asset_type:
+      class_name: PandasDataset
+      module_name: great_expectations.dataset
+  metadata:
+    class_name: PandasDatasource
+    module_name: great_expectations.datasource
+    data_asset_type:
+      class_name: PandasDataset
+      module_name: great_expectations.dataset
 config_variables_file_path: uncommitted/config_variables.yml
 
 # The plugins_directory will be added to your python path for custom modules
@@ -59,15 +48,15 @@ validation_operators:
     # (and other customizations), read: https://docs.greatexpectations.io/en/latest/autoapi/great_expectations/validation_operators/index.html#great_expectations.validation_operators.ActionListValidationOperator
     class_name: ActionListValidationOperator
     action_list:
-    - name: store_validation_result
-      action:
-        class_name: StoreValidationResultAction
-    - name: store_evaluation_params
-      action:
-        class_name: StoreEvaluationParametersAction
-    - name: update_data_docs
-      action:
-        class_name: UpdateDataDocsAction
+      - name: store_validation_result
+        action:
+          class_name: StoreValidationResultAction
+      - name: store_evaluation_params
+        action:
+          class_name: StoreEvaluationParametersAction
+      - name: update_data_docs
+        action:
+          class_name: UpdateDataDocsAction
       # - name: send_slack_notification_on_validation_result
       #   action:
       #     class_name: SlackNotificationAction
@@ -79,6 +68,15 @@ validation_operators:
       #       module_name: great_expectations.render.renderer.slack_renderer
       #       class_name: SlackRenderer
 
+  seq_validation_operator:
+    class_name: ActionListValidationOperator
+    action_list:
+      - name: store_validation_result
+        action:
+          class_name: StoreValidationResultAction
+      - name: update_data_docs
+        action:
+          class_name: UpdateDataDocsAction
 stores:
 # Stores are configurable places to store things like Expectations, Validations
 # Data Docs, and more. These are for advanced users only - most users can simply
@@ -124,6 +122,6 @@ data_docs_sites:
       class_name: DefaultSiteIndexBuilder
 
 anonymous_usage_statistics:
+  data_context_id: 6f03dd50-1223-4f3c-9f58-6d9112c218b0
   enabled: true
-  data_context_id: e59f1f2f-249f-4097-b7c1-9e44735453be
 notebooks:

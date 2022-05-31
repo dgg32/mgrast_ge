@@ -1,3 +1,3 @@
 n_contigs	contig_bp	gap_pct	ctg_N50	ctg_L50	ctg_N90	ctg_L90	ctg_max	gc_avg	gc_std	filename
-31	2775	0.000	30	90	30	90	90	0.55423	0.02767	/home/huangsixing/Documents/mgrast_ge/test_fasta/mgm4968245.3.fasta
-69	9257	0.032	23	149	55	85	363	0.51323	0.09431	/home/huangsixing/Documents/mgrast_ge/test_fasta/mgm4968248.3.fasta
+31	2775	0.000	30	60	30	90	90	0.55423	0.02767	/home/huangsixing/Documents/mgrast_ge/test_fasta/mgm4968245.3.fasta
+69	9257	0.032	23	149	55	85	363	0.31323	0.09431	/home/huangsixing/Documents/mgrast_ge/test_fasta/mgm4968248.3.fasta
