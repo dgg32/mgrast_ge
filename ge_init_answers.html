@@ -1,0 +1,68 @@
+<pre>(base) <font color="#8AE234"><b>huangsixing@Tower-Desktop-PC</b></font>:<font color="#729FCF"><b>~/Documents/mgrast_ge</b></font>$ great_expectations init
+
+<font color="#06989A">  ___              _     ___                  _        _   _</font>
+<font color="#06989A"> / __|_ _ ___ __ _| |_  | __|_ ___ __  ___ __| |_ __ _| |_(_)___ _ _  ___</font>
+<font color="#06989A">| (_ | &apos;_/ -_) _` |  _| | _|\ \ / &apos;_ \/ -_) _|  _/ _` |  _| / _ \ &apos; \(_-&lt;</font>
+<font color="#06989A"> \___|_| \___\__,_|\__| |___/_\_\ .__/\___\__|\__\__,_|\__|_\___/_||_/__/</font>
+<font color="#06989A">                                |_|</font>
+<font color="#06989A">             ~ Always know what to expect from your data ~</font>
+
+Let&apos;s configure a new Data Context.
+
+First, Great Expectations will create a new directory:
+
+    great_expectations
+    |-- great_expectations.yml
+    |-- expectations
+    |-- checkpoints
+    |-- notebooks
+    |-- plugins
+    |-- .gitignore
+    |-- uncommitted
+        |-- config_variables.yml
+        |-- documentation
+        |-- validations
+
+OK to proceed? [Y/n]: Y
+
+================================================================================
+
+Would you like to configure a Datasource? [Y/n]: Y
+
+What data would you like Great Expectations to connect to?
+    1. Files on a filesystem (for processing with Pandas or Spark)
+    2. Relational database (SQL)
+: 1
+
+What are you processing your files with?
+    1. Pandas
+    2. PySpark
+: 1
+
+Enter the path (relative or absolute) of the root directory where the data files are stored.
+: ./tsv
+
+Give your new Datasource a short name.
+ [tsv__dir]: tsv
+
+Great Expectations will now add a new Datasource &apos;tsv&apos; to your deployment, by adding this entry to your great_expectations.yml:
+
+  tsv:
+    data_asset_type:
+      class_name: PandasDataset
+      module_name: great_expectations.dataset
+    batch_kwargs_generators:
+      subdir_reader:
+        class_name: SubdirReaderBatchKwargsGenerator
+        base_directory: ../tsv
+    class_name: PandasDatasource
+    module_name: great_expectations.datasource
+
+
+Would you like to proceed? [Y/n]: Y
+
+================================================================================
+
+Would you like to profile new Expectations for a single data asset within your new Datasource? [Y/n]: n
+Okay, exiting now. To learn more about Profilers, run great_expectations profile --help or visit docs.greatexpectations.io!
+</pre>
