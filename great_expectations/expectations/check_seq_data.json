@@ -1,0 +1,28 @@
+{
+  "data_asset_type": "Dataset",
+  "expectation_suite_name": "check_seq_data",
+  "expectations": [
+    {
+      "expectation_type": "expect_column_min_to_be_between",
+      "kwargs": {
+        "column": "ctg_L50",
+        "max_value": 150,
+        "min_value": 80
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "gc_avg",
+        "max_value": 0.6,
+        "min_value": 0.4
+      },
+      "meta": {}
+    }
+  ],
+  "ge_cloud_id": null,
+  "meta": {
+    "great_expectations_version": "0.15.7"
+  }
+}

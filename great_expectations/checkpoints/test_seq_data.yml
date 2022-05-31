@@ -1,0 +1,12 @@
+
+validation_operator_name: seq_validation_operator
+batches:
+  - batch_kwargs:
+      path: tsv/test_seq_stats.tsv
+      datasource: tsv
+      data_asset_name: test_seq_stats
+      reader_method: read_csv
+      reader_options:
+        'sep': '\t'
+    expectation_suite_names:
+      - check_seq_data
