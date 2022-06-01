@@ -16,22 +16,22 @@ config_version: 2.0
 datasources:
   tsv:
     module_name: great_expectations.datasource
+    class_name: PandasDatasource
     data_asset_type:
       module_name: great_expectations.dataset
       class_name: PandasDataset
-    class_name: PandasDatasource
   seq_stats:
     module_name: great_expectations.datasource
+    class_name: PandasDatasource
     data_asset_type:
       module_name: great_expectations.dataset
       class_name: PandasDataset
-    class_name: PandasDatasource
   metadata:
     module_name: great_expectations.datasource
+    class_name: PandasDatasource
     data_asset_type:
       module_name: great_expectations.dataset
       class_name: PandasDataset
-    class_name: PandasDatasource
 config_variables_file_path: uncommitted/config_variables.yml
 
 # The plugins_directory will be added to your python path for custom modules
