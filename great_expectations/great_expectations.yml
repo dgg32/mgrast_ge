@@ -15,23 +15,23 @@ config_version: 2.0
 # add a new datasource. Read more at https://docs.greatexpectations.io/en/latest/reference/core_concepts/datasource_reference.html
 datasources:
   tsv:
+    module_name: great_expectations.datasource
     data_asset_type:
       module_name: great_expectations.dataset
       class_name: PandasDataset
     class_name: PandasDatasource
-    module_name: great_expectations.datasource
   seq_stats:
+    module_name: great_expectations.datasource
     data_asset_type:
       module_name: great_expectations.dataset
       class_name: PandasDataset
     class_name: PandasDatasource
-    module_name: great_expectations.datasource
   metadata:
+    module_name: great_expectations.datasource
     data_asset_type:
       module_name: great_expectations.dataset
       class_name: PandasDataset
     class_name: PandasDatasource
-    module_name: great_expectations.datasource
 config_variables_file_path: uncommitted/config_variables.yml
 
 # The plugins_directory will be added to your python path for custom modules
@@ -122,6 +122,6 @@ data_docs_sites:
       class_name: DefaultSiteIndexBuilder
 
 anonymous_usage_statistics:
-  data_context_id: 6f03dd50-1223-4f3c-9f58-6d9112c218b0
   enabled: true
+  data_context_id: 6f03dd50-1223-4f3c-9f58-6d9112c218b0
 notebooks:
