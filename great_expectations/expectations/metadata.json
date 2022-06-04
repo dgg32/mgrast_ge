@@ -1,22 +1,28 @@
 {
-  "data_asset_type": "Dataset",
-  "expectation_suite_name": "check_meta_data",
+  "data_asset_type": null,
+  "expectation_suite_name": "metadata",
   "expectations": [
     {
       "expectation_type": "expect_column_values_to_be_between",
       "kwargs": {
-        "column": "latitude",
-        "max_value": 90,
-        "min_value": -90
+        "column": "longitude",
+        "max_value": 180,
+        "min_value": -180,
+        "result_format": {
+          "result_format": "COMPLETE"
+        }
       },
       "meta": {}
     },
     {
       "expectation_type": "expect_column_values_to_be_between",
       "kwargs": {
-        "column": "longitude",
-        "max_value": 180,
-        "min_value": -180
+        "column": "latitude",
+        "max_value": 90,
+        "min_value": -90,
+        "result_format": {
+          "result_format": "COMPLETE"
+        }
       },
       "meta": {}
     },
@@ -24,6 +30,9 @@
       "expectation_type": "expect_column_values_to_match_strftime_format",
       "kwargs": {
         "column": "collection_time",
+        "result_format": {
+          "result_format": "COMPLETE"
+        },
         "strftime_format": "%H:%M:%S"
       },
       "meta": {}
@@ -32,6 +41,9 @@
       "expectation_type": "expect_column_values_to_be_of_type",
       "kwargs": {
         "column": "material",
+        "result_format": {
+          "result_format": "COMPLETE"
+        },
         "type_": "str"
       },
       "meta": {}
@@ -40,6 +52,9 @@
       "expectation_type": "expect_column_values_to_be_of_type",
       "kwargs": {
         "column": "country",
+        "result_format": {
+          "result_format": "COMPLETE"
+        },
         "type_": "str"
       },
       "meta": {}
@@ -48,6 +63,9 @@
       "expectation_type": "expect_column_values_to_be_of_type",
       "kwargs": {
         "column": "feature",
+        "result_format": {
+          "result_format": "COMPLETE"
+        },
         "type_": "str"
       },
       "meta": {}
@@ -55,6 +73,6 @@
   ],
   "ge_cloud_id": null,
   "meta": {
-    "great_expectations_version": "0.15.7"
+    "great_expectations_version": "0.15.8"
   }
 }
