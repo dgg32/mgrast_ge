@@ -25,11 +25,6 @@ datasources:
           group_names:
             - data_asset_name
           pattern: (.*)
-      default_runtime_data_connector_name:
-        batch_identifiers:
-          - default_identifier_name
-        module_name: great_expectations.datasource.data_connector
-        class_name: RuntimeDataConnector
     class_name: Datasource
     execution_engine:
       module_name: great_expectations.execution_engine
