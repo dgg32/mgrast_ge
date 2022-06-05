@@ -1,28 +1,28 @@
-sample	latitude	longitude	location	country	collection_time	material	feature	metagenome_id
-mgs879289	38.872848	141.579113	Nogimachi	Japan	00:00:00	waste water	wastewater treatment plant	mgm4968245.3
-mgs879334	38.872848	141.579113	Nogimachi	Japan	00:00:00	waste water	wastewater treatment plant	mgm4968248.3
-mgs879316	38.872848	141.579113	Nogimachi	Japan	00:00:00	waste water	wastewater treatment plant	mgm4968232.3
-mgs879280	38.872848	141.579113	Nogimachi	Japan	00:00:00	waste water	wastewater treatment plant	mgm4968246.3
-mgs879268	38.872848	141.579113	Nogimachi	Japan	00:00:00	waste water	wastewater treatment plant	mgm4968234.3
-mgs879298	38.872848	141.579113	Nogimachi	Japan	00:00:00	waste water	wastewater treatment plant	mgm4968239.3
-mgs879274	38.872848	141.579113	Nogimachi	Japan	00:00:00	waste water	wastewater treatment plant	mgm4968231.3
-mgs879340	38.872848	141.579113	Nogimachi	Japan	00:00:00	waste water	wastewater treatment plant	mgm4968238.3
-mgs879301	38.872848	141.579113	Nogimachi	Japan	00:00:00	waste water	wastewater treatment plant	mgm4968226.3
-mgs879307	38.872848	141.579113	Nogimachi	Japan	00:00:00	waste water	wastewater treatment plant	mgm4968224.3
-mgs879283	38.872848	141.579113	Nogimachi	Japan	00:00:00	waste water	wastewater treatment plant	mgm4968243.3
-mgs879322	38.872848	141.579113	Nogimachi	Japan	00:00:00	waste water	wastewater treatment plant	mgm4968240.3
-mgs879325	38.872848	141.579113	Nogimachi	Japan	00:00:00	waste water	wastewater treatment plant	mgm4968249.3
-mgs879271	38.872848	141.579113	Nogimachi	Japan	00:00:00	waste water	wastewater treatment plant	mgm4968233.3
-mgs879292	38.872848	141.579113	Nogimachi	Japan	00:00:00	waste water	wastewater treatment plant	mgm4968241.3
-mgs879295	38.872848	141.579113	Nogimachi	Japan	00:00:00	waste water	wastewater treatment plant	mgm4968242.3
-mgs879265	38.872848	141.579113	Nogimachi	Japan	00:00:00	waste water	wastewater treatment plant	mgm4968227.3
-mgs879331	38.872848	141.579113	Nogimachi	Japan	00:00:00	waste water	wastewater treatment plant	mgm4968228.3
-mgs879262	38.872848	141.579113	Nogimachi	Japan	00:00:00	waste water	wastewater treatment plant	mgm4968230.3
-mgs879277	38.872848	141.579113	Nogimachi	Japan	00:00:00	waste water	wastewater treatment plant	mgm4968250.3
-mgs879313	38.872848	141.579113	Nogimachi	Japan	00:00:00	waste water	wastewater treatment plant	mgm4968236.3
-mgs879304	38.872848	141.579113	Nogimachi	Japan	00:00:00	waste water	wastewater treatment plant	mgm4968235.3
-mgs879328	38.872848	141.579113	Nogimachi	Japan	00:00:00	waste water	wastewater treatment plant	mgm4968225.3
-mgs879319	38.872848	141.579113	Nogimachi	Japan	00:00:00	waste water	wastewater treatment plant	mgm4968229.3
-mgs879286	38.872848	141.579113	Nogimachi	Japan	00:00:00	waste water	wastewater treatment plant	mgm4968237.3
-mgs879337	38.872848	141.579113	Nogimachi	Japan	00:00:00	waste water	wastewater treatment plant	mgm4968244.3
-mgs879310	141.579113	38.872848	Nogimachi	Japan	00:00:00	waste water	wastewater treatment plant	mgm4968247.3
+sample	latitude	longitude	location	country	collection_date	collection_time	material	feature	metagenome_id
+mgs879283	38.872848	141.579113	Nogimachi	Japan	2022-04-28	00:00:00	waste water	wastewater treatment plant	mgm4968243.3
+mgs879310	38.872848	141.579113	Nogimachi	Japan	2022-04-28	00:00:00	waste water	wastewater treatment plant	mgm4968247.3
+mgs879340	38.872848	141.579113	Nogimachi	Japan	2022-04-28	00:00:00	waste water	wastewater treatment plant	mgm4968238.3
+mgs879289	38.872848	141.579113	Nogimachi	Japan	2022-04-28	00:00:00	waste water	wastewater treatment plant	mgm4968245.3
+mgs879280	38.872848	141.579113	Nogimachi	Japan	2022-04-28	00:00:00	waste water	wastewater treatment plant	mgm4968246.3
+mgs879286	38.872848	141.579113	Nogimachi	Japan	2022-04-28	00:00:00	waste water	wastewater treatment plant	mgm4968237.3
+mgs879304	38.872848	141.579113	Nogimachi	Japan	2022-04-28	00:00:00	waste water	wastewater treatment plant	mgm4968235.3
+mgs879334	38.872848	141.579113	Nogimachi	Japan	2022-04-28	00:00:00	waste water	wastewater treatment plant	mgm4968248.3
+mgs879274	38.872848	141.579113	Nogimachi	Japan	2022-04-28	00:00:00	waste water	wastewater treatment plant	mgm4968231.3
+mgs879328	38.872848	141.579113	Nogimachi	Japan	2022-04-28	00:00:00	waste water	wastewater treatment plant	mgm4968225.3
+mgs879295	38.872848	141.579113	Nogimachi	Japan	2022-04-28	00:00:00	waste water	wastewater treatment plant	mgm4968242.3
+mgs879316	38.872848	141.579113	Nogimachi	Japan	2022-04-28	00:00:00	waste water	wastewater treatment plant	mgm4968232.3
+mgs879292	38.872848	141.579113	Nogimachi	Japan	2022-04-28	00:00:00	waste water	wastewater treatment plant	mgm4968241.3
+mgs879301	38.872848	141.579113	Nogimachi	Japan	2022-04-28	00:00:00	waste water	wastewater treatment plant	mgm4968226.3
+mgs879268	38.872848	141.579113	Nogimachi	Japan	2022-04-28	00:00:00	waste water	wastewater treatment plant	mgm4968234.3
+mgs879322	38.872848	141.579113	Nogimachi	Japan	2022-04-28	00:00:00	waste water	wastewater treatment plant	mgm4968240.3
+mgs879277	38.872848	141.579113	Nogimachi	Japan	2022-04-28	00:00:00	waste water	wastewater treatment plant	mgm4968250.3
+mgs879313	38.872848	141.579113	Nogimachi	Japan	2022-04-28	00:00:00	waste water	wastewater treatment plant	mgm4968236.3
+mgs879271	38.872848	141.579113	Nogimachi	Japan	2022-04-28	00:00:00	waste water	wastewater treatment plant	mgm4968233.3
+mgs879325	38.872848	141.579113	Nogimachi	Japan	2022-04-28	00:00:00	waste water	wastewater treatment plant	mgm4968249.3
+mgs879298	38.872848	141.579113	Nogimachi	Japan	2022-04-28	00:00:00	waste water	wastewater treatment plant	mgm4968239.3
+mgs879331	38.872848	141.579113	Nogimachi	Japan	2022-04-28	00:00:00	waste water	wastewater treatment plant	mgm4968228.3
+mgs879307	38.872848	141.579113	Nogimachi	Japan	2022-04-28	00:00:00	waste water	wastewater treatment plant	mgm4968224.3
+mgs879265	38.872848	141.579113	Nogimachi	Japan	2022-04-28	00:00:00	waste water	wastewater treatment plant	mgm4968227.3
+mgs879337	38.872848	141.579113	Nogimachi	Japan	2022-04-28	00:00:00	waste water	wastewater treatment plant	mgm4968244.3
+mgs879319	38.872848	141.579113	Nogimachi	Japan	2022-04-28	00:00:00	waste water	wastewater treatment plant	mgm4968229.3
+mgs879262	38.872848	141.579113	Nogimachi	Japan	2022-04-28	00:00:00	waste water	wastewater treatment plant	mgm4968230.3

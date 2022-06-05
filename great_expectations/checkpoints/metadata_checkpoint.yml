@@ -1,4 +1,4 @@
-name: metadata
+name: metadata_checkpoint
 config_version: 1.0
 template_name:
 module_name: great_expectations.checkpoint
@@ -28,7 +28,7 @@ validations:
         reader_method: read_csv
         reader_options:
           sep: "\t"
-    expectation_suite_name: metadata
+    expectation_suite_name: metadata_suite
     action_list:
       - name: store_validation_result
         action:

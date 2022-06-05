@@ -24,7 +24,7 @@ datasources:
         default_regex:
           group_names:
             - data_asset_name
-          pattern: (.*)
+          pattern: (.*\.tsv)
     class_name: Datasource
     execution_engine:
       module_name: great_expectations.execution_engine
@@ -96,5 +96,5 @@ data_docs_sites:
 
 anonymous_usage_statistics:
   enabled: true
-  data_context_id: 45f64915-4be9-4c7d-8762-9ac233b0c60d
+  data_context_id: bdebf0ee-84f5-4f3f-a494-6f18843bd65b
 notebooks:
